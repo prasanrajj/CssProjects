@@ -1,0 +1,30 @@
+/* Element selector */
+p {
+  color: black;
+  font-size: 16px;
+}
+
+/* Class selector */
+.highlight {
+  color: blue;
+  font-weight: bold;
+}
+
+/* Unique element */
+#special-card {
+  padding: 16px;
+  margin: 16px;
+  background-color: gold;
+  font-weight: bold;
+}
+
+
+/* Reusable component */
+.card {
+  padding: 16px;
+  margin: 16px;
+  background-color: #ff0c0c;
+  border-radius: 8px;
+}
+
+

@@ -1,0 +1,20 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.box {
+    /* With width → element becomes sizable */
+  width: 300px;
+
+  /* Space inside the box */
+  padding: 20px; 
+
+  /* BELOW 2 lines make the content box @center */
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: steelblue;
+  color: white;
+  /* Aligns content inside */
+  text-align: center;
+}
