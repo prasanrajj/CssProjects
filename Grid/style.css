@@ -1,0 +1,30 @@
+.page {
+  display: grid;
+  grid-template-rows: 60px 1fr 50px;
+  grid-template-columns: 200px 1fr ;
+  height: 100vh;
+}
+
+.header {
+  grid-column: 1 / 3;
+  background-color: steelblue;
+  color: white;
+  padding: 15px;
+}
+
+.sidebar {
+  background-color: lightgray;
+  padding: 15px;
+}
+
+.content {
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+.footer {
+  grid-column: 1 / 3;
+  background-color: steelblue;
+  color: white;
+  padding: 10px;
+}
