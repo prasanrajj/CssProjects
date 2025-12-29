@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* STATIC */
+.static-box {
+  background-color: lightgray;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+/* RELATIVE (reference point) */
+.relative-box {
+  position: relative;
+  background-color: lightblue;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+/* ABSOLUTE (measured from padding box) */
+.absolute-badge {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: red;
+  color: white;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+/* STICKY */
+.sticky-box {
+  position: sticky;
+  top: 10px;
+  background-color: orange;
+  padding: 16px;
+  margin-bottom: 40px;
+}
+
+/* FIXED */
+.fixed-box {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  background-color: green;
+  color: white;
+  padding: 12px;
+}
+
+/* EXTRA SPACE */
+.spacer {
+  height: 300px;
+}
+
+.content {
+  height: 800px;
+}
