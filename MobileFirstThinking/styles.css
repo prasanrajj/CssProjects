@@ -1,0 +1,35 @@
+/* MOBILE FIRST (default) */
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
+.header,
+.content,
+.sidebar,
+.footer {
+  padding: 16px;
+  border: 10px solid #ccc;
+}
+
+.header { background: lightblue; }
+.content { background: whitesmoke; }
+.sidebar { background: lightgray; }
+.footer { background: lightblue; }
+
+/* TABLET & DESKTOP ENHANCEMENT */
+@media (min-width: 768px) {
+  .page {
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+  }
+
+  .header { grid-area: header; }
+  .content { grid-area: content; }
+  .sidebar { grid-area: sidebar; }
+  .footer { grid-area: footer; }
+}
