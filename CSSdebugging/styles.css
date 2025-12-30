@@ -1,0 +1,12 @@
+/* Try breaking and fixing these */
+.box {
+  width: 200px;
+  padding: 20px;
+  background-color: steelblue;
+  color: white;
+  margin: auto;
+}
+
+#id{
+    color: solid black;
+}
