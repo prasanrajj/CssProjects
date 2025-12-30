@@ -1,0 +1,15 @@
+.hero {
+  height: 300px;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+
+  background-image: url("https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=2048x2048&w=is&k=20&c=Xa_wH_pZFMWNX8EPtufv9KSvS1OzUPus7C0Br2ZIMDg=");
+  background-size: cover;
+  background-position: center;
+}
+
+p{
+    background-color: lightgrey;
+    display: inline;
+}
