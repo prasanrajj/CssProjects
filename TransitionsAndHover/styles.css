@@ -1,0 +1,37 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+.btn {
+  padding: 14px 24px;
+  background-color: steelblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  /* centering the button */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* ALL 4 PARTS */
+  transition-property: background-color, transform;
+  transition-duration: 3s;
+  transition-timing-function: ease;
+  transition-delay: 0.2s;
+}
+
+.btn:hover {
+  background-color: red;
+  /* color change */
+
+  transform: scale(1.1);
+  /* size change */
+
+  opacity: 0.9;
+  /* transparency change */
+
+
+}
