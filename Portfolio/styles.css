@@ -1,0 +1,221 @@
+/* =====================================
+   1. GLOBAL DESIGN VARIABLES (THEME)
+   ===================================== */
+
+:root {
+    --bg-page: #f5f7fa;
+    --bg-card: #ffffff;
+
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+
+    --accent: #2563eb;
+    --avatar-bg: #d1d5db;
+}
+
+
+/* =====================================
+   2. GLOBAL PAGE SETUP
+   ===================================== */
+
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    margin-bottom: 40px;
+    ;
+    font-family: system-ui, sans-serif;
+}
+
+/* =====================================
+   3. MAIN GRID LAYOUT (STRUCTURE)
+   ===================================== */
+
+.page {
+    width: 80vmin;
+    height: 80vmin;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.4fr 1fr;
+    grid-template-rows: 1fr 1.4fr 1fr;
+
+    grid-template-areas:
+        "nw   .   ne"
+        "w  center e"
+        "sw   .   se";
+
+    gap: 28px;
+}
+
+/* =====================================
+   4. GRID AREA ASSIGNMENT
+   ===================================== */
+
+.nw {
+    grid-area: nw;
+}
+
+.ne {
+    grid-area: ne;
+}
+
+.sw {
+    grid-area: sw;
+}
+
+.se {
+    grid-area: se;
+}
+
+.w {
+    grid-area: w;
+}
+
+.e {
+    grid-area: e;
+}
+
+/* =====================================
+   5. SHARED CARD STYLE (REUSABLE)
+   ===================================== */
+
+.nw,
+.ne,
+.sw,
+.se,
+.w,
+.e {
+    background-color: var(--bg-card);
+    border-radius: 16px;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* =====================================
+   6. CENTER AREA + AVATAR
+   ===================================== */
+
+.center {
+    grid-area: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    background-image: url("https://lh3.googleusercontent.com/a/ACg8ocLHG2DOI-LYvBqWdoPNUup7vS8kPUOnZin3TjklaVmIw3BfRRxCWA=s360-c-no");
+    background-size: cover;
+    background-position: center;
+    background-color: var(--avatar-bg);
+
+    transform: translateY(-22px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* =====================================
+   7. INTERACTIONS (HOVER EFFECTS)
+   ===================================== */
+
+.nw:hover,
+.ne:hover,
+.sw:hover,
+.se:hover,
+.w:hover,
+.e:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.12);
+}
+
+.avatar:hover {
+    transform: translateY(-26px) scale(1.02);
+}
+
+/* =====================================
+   8. CONTENT TEXT STYLING
+   ===================================== */
+
+p,
+li {
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   9. DARK MODE (VARIABLE OVERRIDES ONLY)
+   ===================================== */
+
+body.dark {
+    --bg-page: #0f172a;
+    --bg-card: #020617;
+
+    --text-primary: #e5e7eb;
+    --text-secondary: #94a3b8;
+
+    --accent: #60a5fa;
+    --avatar-bg: #1e293b;
+}
+
+/* =====================================
+   10. RESPONSIVE (MOBILE)
+   ===================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        align-items: flex-start;
+        padding: 24px;
+    }
+
+    .page {
+        width: 100%;
+        height: auto;
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "center"
+            "nw"
+            "ne"
+            "sw"
+            "se"
+            "w"
+            "e";
+
+        gap: 20px;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+        transform: none;
+    }
+}

@@ -1,0 +1,95 @@
+:root {
+    --bg-page: #000000;
+    --bg-card: #04102e;
+
+    --text-primary: #ffffff;
+    --text-secondary: #4d4d4f;
+
+    --accent: #2563eb;
+    --avatar-bg: #d1d5db;
+}
+
+.page {
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr 0.5fr 2fr;
+
+    grid-template-areas:
+        "nw   .   ne"
+        "w  center e"
+        "sw   .   se";
+
+    gap: 28px;
+    margin: auto;
+}
+
+body {
+    PADDING: 2%;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: system-ui, sans-serif;
+}
+
+.center {
+    grid-area: center;
+    background-image: url("https://lh3.googleusercontent.com/a/ACg8ocLHG2DOI-LYvBqWdoPNUup7vS8kPUOnZin3TjklaVmIw3BfRRxCWA=s360-c-no");
+    background-size: contain;
+    background-position: top;
+    /* ackground-position: 159% 20% */
+    
+
+}
+
+.nw,
+.ne,
+.sw,
+.se,
+.w,
+.e,
+.center {
+    background-color: var(--bg-card);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 2px 8px 4px rgb(255, 176, 176);
+}
+
+.nw {
+    grid-area: nw;
+}
+
+.ne {
+    grid-area: ne;
+    width: 100%;
+  
+}
+
+.sw {
+    grid-area: sw;
+    width: 100%;
+}
+
+.se {
+    grid-area: se;
+}
+
+.w {
+    grid-area: w;
+}
+
+.e {
+    grid-area: e;
+}
+.e h2,.w h2{
+    margin-top: 40%;
+}
