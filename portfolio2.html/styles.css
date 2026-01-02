@@ -1,0 +1,107 @@
+:root {
+  --bg: #fafafa;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --accent: #111827;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.header {
+  max-width: 1000px;
+  margin: auto;
+  padding: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.hero {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.hero-text p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.hero-text button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+}
+
+.hero-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #d1d5db;
+}
+
+.skills {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+.skill-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.skill-list span {
+  padding: 8px 14px;
+  background: #e5e7eb;
+  border-radius: 999px;
+}
+
+.philosophy {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 40px 24px;
+  border-left: 4px solid var(--accent);
+}
+
+.philosophy p {
+  font-size: 20px;
+  color: var(--muted);
+}
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  color: var(--muted);
+}
