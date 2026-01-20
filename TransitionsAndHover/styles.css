@@ -17,7 +17,7 @@ body {
   margin-right: auto;
 
   /* ALL 4 PARTS */
-  transition-property: background-color, transform;
+  transition-property: background-color, transform, opacity;
   transition-duration: 3s;
   transition-timing-function: ease;
   transition-delay: 0.2s;
@@ -30,7 +30,7 @@ body {
   transform: scale(1.1);
   /* size change */
 
-  opacity: 0.9;
+  opacity: 0.1;
   /* transparency change */
 
 
